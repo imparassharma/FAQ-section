@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main{
+    height: 70vh;
+    width: 88%;
+    margin-top: 8rem;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mobile-img img{
+    margin-left: 1.2rem;
+    margin-top: -6.5rem;
+}
+
+.main #img-m{
+    margin-left: 3.2rem;
+}
+
+.desktop-img{
+    display: none;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.container {
+    font-size: 14px;
+    width: 85%;
+}
+
+.container h1{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color:hsl(237, 12%, 33%)
+}
+
+hr{
+    opacity: 0.2;
+}
+
+.answer{
+    display: none;
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 90%;
+    color: hsl(240, 6%, 50%);
+}
+
+.active .answer{
+    display: block;
+}
+
+
+.ques{
+    display: flex;
+    align-items: center;
+    color: hsl(237, 12%, 33%);
+}
+
+.btn{
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 1vh;
+    width: 10px;
+    right: 25px;
+}
+
+.ques-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+@media screen and (min-width:1400px) {
+
+    .main{
+        margin-top: 0;
+        width: 65%;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .container{
+        width: 22rem;
+        margin-left: 8rem;
+        height: 50vh;
+    }
+
+    .container h1{
+        text-align: left;
+    }
+    
+    .btn{
+        right: 8.5rem;
+    }
+
+    .mobile-img{
+        display: none;
+    }
+
+    .desktop-img{
+        display: block;
+        height: 70vh;
+        width: 25vw;
+    }
+
+    .desktop-img img{
+        margin-left: -7rem;
+        margin-top: 4rem;
+    }
+
+
+}
