@@ -34,7 +34,7 @@ body{
     display: none;
     background-image: url(images/bg-pattern-desktop.svg);
     background-size: cover;
-    background-position: bottom right;
+    background-position: right bottom;
 }
 
 .container {
@@ -87,13 +87,16 @@ hr{
     margin-top: -10px;
 }
 
+#box{
+    display: none;
+}
+
 @media screen and (min-width:1400px) {
 
     .main{
         margin-top: 0;
         width: 65%;
         flex-direction: row;
-        overflow: hidden;
     }
 
     .container{
@@ -115,15 +118,54 @@ hr{
     }
 
     .desktop-img{
-        display: block;
+        display: flex;
+        flex-direction: row;
         height: 70vh;
+        overflow: hidden;
         width: 25vw;
+        margin-left: -5.9rem;
     }
 
     .desktop-img img{
-        margin-left: -7rem;
-        margin-top: 4rem;
+        margin-left: -5rem;
+        margin-top: 5rem;
+        height: 48vh;
+        width: 30vw;
+        z-index: 0;
     }
 
+    #box{
+        height: 25vh;
+        width: 12vw;
+        margin-top: 5rem;
+        margin-left: -5.6rem;
+        display: block;
+        z-index: 1;
+    }
 
+}
+
+@media screen and (width:1440px) {
+
+    .desktop-img{
+        margin-left: -5.3rem;
+        width: 31vw;
+    }
+    
+    .desktop-img img{
+        width: 35vw;
+    }
+
+    #box{
+        height: 22vh;
+    }
+
+    .container{
+        margin-left: 5rem;
+        width: 20rem;
+    }
+
+    .btn{
+        right: 6rem;
+    }
 }
